@@ -1,0 +1,34 @@
+%The fish ate the worm . it was hungry
+has(ate_3,agent,fish_2).
+has(ate_3,participant,it_7).
+has(it_7,trait,hungry_9).
+has(ate_3,recipient,worm_5).
+has(it_7,instance_of,it).
+has(hungry_9,instance_of,hungry).
+has(fish_2,instance_of,fish).
+has(ate_3,instance_of,eat).
+has(worm_5,instance_of,worm).
+
+resolve(it_7).
+
+%i ate when i was hungry . if i was not hungry for lunch , i would skip it
+has_bg(skip_18,resulting_state,ate_2).
+has_bg(skip_18,agent,i_16).
+has_bg(was_5,participant,i_16).
+has_bg(i_16,trait,hungry_6).
+has_bg(ate_2,participant,i_16).
+has_bg(i_16,trait,hungry_6).
+has_bg(ate_2,agent,i_16).
+has_bg(skip_18,recipient,it_19).
+has_bg(ate_2,next_event,skip_18).
+has_bg(ate_2,next_event,skip_18).
+has_bg(it_19,instance_of,it).
+has_bg(hungry_6,instance_of,hungry).
+has_bg(i_16,instance_of,i).
+has_bg(skip_18,instance_of,skip).
+has_bg(was_5,instance_of,be).
+has_bg(hungry_6,instance_of,hungry).
+has_bg(i_16,instance_of,i).
+has_bg(ate_2,instance_of,eat).
+has_bg(i_16,instance_of,i).
+has_bg(i_16,instance_of,i).

@@ -1,0 +1,33 @@
+%The fish ate the worm . it was tasty
+has(ate_3,participant,it_7).
+has(it_7,trait,tasty_9).
+has(ate_3,agent,fish_2).
+has(ate_3,recipient,worm_5).
+has(it_7,instance_of,it).
+has(tasty_9,instance_of,tasty).
+has(fish_2,instance_of,fish).
+has(ate_3,instance_of,eat).
+has(worm_5,instance_of,worm).
+
+resolve(it_7).
+
+%he ate their tasty brains and even drank their refreshing blood
+has_bg(ate_2,next_event,drank_8).
+has_bg(ate_2,agent,he_1).
+has_bg(drank_8,agent,he_1).
+has_bg(ate_2,recipient,brains_5).
+has_bg(drank_8,recipient,blood_11).
+has_bg(brains_5,trait,tasty_4).
+has_bg(blood_11,trait,refreshing_10).
+has_bg(brains_5,possesed_by,their_3).
+has_bg(blood_11,possesed_by,their_9).
+has_bg(blood_11,instance_of,blood).
+has_bg(refreshing_10,instance_of,refreshing).
+has_bg(their_3,instance_of,their).
+has_bg(drank_8,instance_of,drink).
+has_bg(tasty_4,instance_of,tasty).
+has_bg(their_9,instance_of,their).
+has_bg(ate_2,instance_of,eat).
+has_bg(he_1,instance_of,he).
+has_bg(brains_5,instance_of,brain).
+
